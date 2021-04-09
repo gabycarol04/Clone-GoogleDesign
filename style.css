@@ -12,25 +12,57 @@
 html{
     font-size: 62.5%;
 }
+body{
+    font-size: var(--p-font);
+    font-family: var(--font-google);
+}
 a{
     text-decoration: none;
+    cursor: pointer; /*Agrega la manita al pasar el mouse sobre el link*/
 }
 li{
     list-style: none;
 }
-p, a{
-    font-size: var(--p-font);
-    font-family: var(--font-google);
+/*Header*/
+header{
+    width: 100%;
+    height: 60px;
+    padding: 20px 0px;
 }
-
-.footer-li a, .footer-location p{
-    color: var(--secondary-color);
+header nav{
+    display: flex;
+    justify-content: flex-end;
 }
-.footer-location, .footer-help{
-    
-    padding: 20px, 30px;
-} 
+header nav .nav-right-section{
+    width: 225px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav .nav-right-section a{
+    margin-right: 10px;
+    color: #000;
+}
+header nav .nav-right-section .menu-icon{
+    background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAwIDEwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTIuNSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iNTAiIGN5PSIxNiIgcj0iMTIuNSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iODQiIGN5PSIxNiIgcj0iMTIuNSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTYiIGN5PSI1MCIgcj0iMTIuNSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iMTIuNSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iODQiIGN5PSI1MCIgcj0iMTIuNSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTYiIGN5PSI4NCIgcj0iMTIuNSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iNTAiIGN5PSI4NCIgcj0iMTIuNSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iODQiIGN5PSI4NCIgcj0iMTIuNSI+PC9jaXJjbGU+PC9zdmc+");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+header nav .nav-right-section img{
+    border-radius: 50%;
+    height: 40px;
+    margin-right: 0px;
+}
+/*Main*/
+/*Footer*/
 footer{
     padding: 20px 30px;
     background-color: var(--secondary-background-color);
+}
+.footer-li a, .footer-location p{
+    color: var(--secondary-color);
 }
