@@ -1,3 +1,9 @@
+:root{
+    --font-google: arial, sans-serif;
+    --p-font: 1.4rem;
+    --secondary-color: rgb(112, 117, 122);
+    --secondary-background-color: #f2f2f2;
+}
 *{
     box-sizing: border-box;
     padding: 0;
@@ -6,14 +12,19 @@
 html{
     font-size: 62.5%;
 }
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
 p, a{
-    font-size: 1.4rem;
-    font-family: arial, sans-serif;
+    font-size: var(--p-font);
+    font-family: var(--font-google);
 }
 
 .footer-li a, .footer-location p{
-    text-decoration: none;
-    color: rgb(112, 117, 122);
+    color: var(--secondary-color);
 }
 .footer-location, .footer-help{
     
@@ -21,5 +32,5 @@ p, a{
 } 
 footer{
     padding: 20px 30px;
-    background-color: #f2f2f2;
+    background-color: var(--secondary-background-color);
 }
