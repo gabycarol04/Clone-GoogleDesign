@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+p, a{
+    font-size: 1.4rem;
+    font-family: arial, sans-serif;
+}
+
+.footer-li a, .footer-location p{
+    text-decoration: none;
+    color: rgb(112, 117, 122);
+}
+.footer-location, .footer-help{
+    
+    padding: 20px, 30px;
+} 
+footer{
+    padding: 20px 30px;
+    background-color: #f2f2f2;
+}
