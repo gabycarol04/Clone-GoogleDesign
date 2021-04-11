@@ -177,3 +177,33 @@ footer .footer-help .footer-help-right ul{
 footer .footer-help ul li a{
     margin: 10px;
 }
+/*Responsive*/
+@media (max-width: 900px) {
+    footer .footer-help{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+    }
+    footer .footer-help .footer-help-left ul, footer .footer-help .footer-help-right ul{
+        justify-content: space-between;
+    }
+}
+@media (max-width: 750px){
+    footer{
+        height: auto;
+        min-width: 500px;
+    }
+    footer .footer-help{
+        display: block;
+    }
+    footer .footer-help .footer-help-left, footer .footer-help .footer-help-right{
+        
+    }
+    footer .footer-help .footer-help-left ul, footer .footer-help .footer-help-right ul{
+        justify-content: center;
+    }
+    footer .footer-help .footer-help-left ul, footer .footer-help .footer-help-right ul li{
+        margin: 0;
+        padding: 10px;
+    }
+}
