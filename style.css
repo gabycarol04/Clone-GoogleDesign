@@ -3,9 +3,10 @@
     --p-font: 1.4rem;
     --secondary-color: rgb(112, 117, 122);
     --secondary-background-color: #f2f2f2;
+    --input-border-color: #dfe1e5; 
 }
 *{
-    box-sizing: border-box;
+    /* box-sizing: border-box;  */
     padding: 0;
     margin: 0;
 }
@@ -27,18 +28,20 @@ li{
 header{
     width: 100%;
     height: 60px;
-    padding: 20px 0px;
+    /* background-color: mediumslateblue; */
 }
 header nav{
     display: flex;
     justify-content: flex-end;
+    /* background-color: khaki; */
 }
 header nav .nav-right-section{
-    width: 225px;
-    height: auto;
+    width: 250px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: mediumseagreen; */
 }
 header nav .nav-right-section a{
     margin-right: 10px;
@@ -47,22 +50,130 @@ header nav .nav-right-section a{
 header nav .nav-right-section .menu-icon{
     background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAwIDEwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTIuNSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iNTAiIGN5PSIxNiIgcj0iMTIuNSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iODQiIGN5PSIxNiIgcj0iMTIuNSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTYiIGN5PSI1MCIgcj0iMTIuNSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iMTIuNSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iODQiIGN5PSI1MCIgcj0iMTIuNSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTYiIGN5PSI4NCIgcj0iMTIuNSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iNTAiIGN5PSI4NCIgcj0iMTIuNSI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iODQiIGN5PSI4NCIgcj0iMTIuNSI+PC9jaXJjbGU+PC9zdmc+");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    
 }
 header nav .nav-right-section img{
     border-radius: 50%;
-    height: 40px;
-    margin-right: 0px;
+    height: 32px;
+    margin-left: 10px;
 }
+
 /*Main*/
+main{
+    /* background-color: lawngreen; */
+    margin-top: 150px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-logo img{
+    width: 300px;
+}
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-input-container{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid var(--input-border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main-input input{
+    width: 440px;
+    height: 45px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dadce0;
+    cursor: pointer;
+}
+main .main-input .search-icon{
+    background-image: url("https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_960_720.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+main .main-input .micro-icon{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;   
+}
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+main .main-buttons div{
+    display: inline-block;
+}
+main .main-buttons button{
+    height: 36px;
+    background-color: #f2f2f2;
+    border: none;
+    font-size: 1.5rem;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+}
+main .main-buttons button:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px 0 #dadce0;
+    color: #222;
+}
 /*Footer*/
 footer{
-    padding: 20px 30px;
+    width: 100%;
+    height: 110px;
+    /*Asegura el footer este siempre abajo en la página*/
+    position: absolute;
+    bottom: 0;
     background-color: var(--secondary-background-color);
 }
 .footer-li a, .footer-location p{
     color: var(--secondary-color);
+} 
+footer .footer-location{
+    padding: 20px 30px;
+    border-bottom: 1px solid #dadce0;
+}
+footer .footer-help{
+    padding: 20px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 1.3rem;
+}
+footer .footer-help ul{
+    display: flex;
+}
+footer .footer-help .footer-help-left ul{
+    justify-content: left;
+}
+footer .footer-help .footer-help-right ul{
+    justify-content: right;
+}
+footer .footer-help ul li a{
+    margin: 10px;
 }
