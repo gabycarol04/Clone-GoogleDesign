@@ -9,5 +9,6 @@ Desarrollo del diseño utilizado en el buscador Google con HTML5 y CCS3.  Aplica
 Utilizando Media Query
 ### 1. Escritorio
 <img src="assets/img/cloneGoogle-escritorio.png">
+
 ### 2. Movil
 <img src="assets/img/cloneGoogle-movil.png">
